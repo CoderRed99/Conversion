@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Conversion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="convert_from_text">Convert From</string>
+    <string name="default_teaspoon_value">1.0 teaspoon</string>
+    <string name="default_cup">.0208 cup</string>
+
+</resources>
