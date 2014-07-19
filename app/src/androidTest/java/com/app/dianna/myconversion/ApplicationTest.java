@@ -1,4 +1,4 @@
-package com.app.dianna.conversion;
+package com.app.dianna.myconversion;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

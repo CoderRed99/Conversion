@@ -19,6 +19,8 @@
     <EditText
         android:id="@+id/amountET"
         android:inputType="numberDecimal"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
         android:text="1.0"
 
         android:layout_alignParentTop="true"
@@ -26,6 +28,7 @@
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+        <requestFocus/>
 
     <Spinner
         android:id="@+id/unitTypeSp"
@@ -52,7 +55,7 @@
 
         <TextView
             android:id="@+id/tspTV"
-            android:text="@string/default_teaspoon_value"
+            android:text="1.0 Teaspoons"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
@@ -63,14 +66,14 @@
 
         <TextView
             android:id="@+id/cupTV"
-            android:text="@string/default_cup"
+            android:text=".0208 Cups"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_gravity="left|top" />
 
         <TextView
             android:id="@+id/tbsTV"
-            android:text=".3333 tbs"
+            android:text=".3333 Tablespoons"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
@@ -81,14 +84,14 @@
 
         <TextView
             android:id="@+id/ozTV"
-            android:text=".1666 oz"
+            android:text=".1666 Ounces"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_gravity="left|top" />
 
         <TextView
             android:id="@+id/kgTV"
-            android:text=".0057 kg"
+            android:text=".0057 Kilograms"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
@@ -99,14 +102,14 @@
 
         <TextView
             android:id="@+id/quartTV"
-            android:text=".0052 quart"
+            android:text=".0052 Quarts"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_gravity="left|top" />
 
         <TextView
             android:id="@+id/gallonTV"
-            android:text=".0013 gallon"
+            android:text=".0013 Gallons"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
@@ -117,14 +120,14 @@
 
         <TextView
             android:id="@+id/poundTV"
-            android:text=".0125 pound"
+            android:text=".0125 Pounds"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_gravity="left|top" />
 
         <TextView
             android:id="@+id/mlTV"
-            android:text="4.9289 ml"
+            android:text="4.9289 Milliliters"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
@@ -135,14 +138,14 @@
 
         <TextView
             android:id="@+id/literTV"
-            android:text=".0049 liter"
+            android:text=".0049 Liters"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_gravity="left|top" />
 
         <TextView
             android:id="@+id/mgTV"
-            android:text="5687.5000 mg"
+            android:text="5687.5000 Milligrams"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_width="wrap_content"
@@ -153,7 +156,7 @@
 
         <TextView
             android:id="@+id/pintTV"
-            android:text=".0104 pint"
+            android:text=".0104 Pints"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/black"
             android:layout_gravity="left|top" />
