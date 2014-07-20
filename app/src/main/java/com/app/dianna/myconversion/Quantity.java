@@ -17,15 +17,15 @@ public class Quantity
 
     public static enum Unit
     {
-        tsp(1.0d), tbs(0.3333d), cup(0.0208d), oz(0.1666d),
-        pint(0.0104d), quart(0.0052d), gallon(0.0013d),
-        pound(0.0125d), ml(4.9289d), liter(0.0049d),
-        mg(5687.5d), kg(0.0057d);
-                /* We define that tsp will be the base unit of measure that we will
+        TSP(1.0d), TBS(0.3333d), CUP(0.0208d), OZ(0.1666d),
+        PINT(0.0104d), QUART(0.0052d), GALLON(0.0013d),
+        POUND(0.0125d), ML(4.9289d), LITER(0.0049d),
+        MG(5687.5d), KG(0.0057d);
+                /* We define that TSP will be the base unit of measure that we will
                    convert to and then convert from    */
-        final static Unit baseUnit = tsp;
+        final static Unit baseUnit = TSP;
         /* Will hold the number of tsps converted from the original unit ie if you're converting
-        from 1 tbs to tsp the byBaseUnit will be .3333 so you know what to use to divide or multiply
+        from 1 TBS to TSP the byBaseUnit will be .3333 so you know what to use to divide or multiply
         This is just setting up the amount from the current unit's myconversion? otherConvertedToTsp*/
         final double byBaseUnit;
                     // Receives the number of tsps the starting unit equals
@@ -62,7 +62,7 @@ public class Quantity
                 (unit));
     }
             // method name="to" returns "Quantity" object
-                // Converts from tsp to the desired unit type
+                // Converts from TSP to the desired unit type
     public Quantity to(Unit newUnit)
     {
         Unit oldUnit = this.unit;
@@ -79,7 +79,7 @@ public class Quantity
         try
         {
             DecimalFormat df = new DecimalFormat("#.0000");
-            return df.format(value) + " " + unit.name();
+            return df.format(value) + " " + unit.name().toLowerCase();
         } catch (Exception e)
         {
             e.printStackTrace();
